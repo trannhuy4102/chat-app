@@ -18,7 +18,8 @@ function App() {
         >
           Learn React
         </a>
-        <Hello name="Y Tran ne" />
+        <Hello name="Y Tran ne" app="Chat box" week=" 2" />
+
       </header>
     </div>
   );
