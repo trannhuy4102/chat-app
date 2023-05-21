@@ -36,3 +36,17 @@
     transform: rotate(360deg);
   }
 }
+
+/* add new */
+ul {
+  background: #3399ff;
+  padding: 20px;
+  width: auto;
+  margin-left: 200px;
+  margin-right: 200px;
+}
+ul li {
+  background: #cce5ff;
+  color: darkblue;
+  margin: 5px;
+}

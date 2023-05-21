@@ -1,17 +1,33 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
-import './index.css';
+import './css/index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import Login from './components/Login';
+import Register from './components/Register';
+import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
-root.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-);
+class AppRouter extends React.Component {
+  render() {
+    return (
+      <Router>
+        <div className="app">
+          <nav className="main-nav">
+            <Link to="/">Home</Link>
+            <Link to="/register">Register</Link>
+            <Link to="/Login">Login</Link>
+          </nav>
+          <Switch>
+            <Route exact path="/" component={App} />
+            <Route path="/register" component={Register} />
+            <Route path="/login" component={Login} />
+          </Switch>
+        </div>
+      </Router>
+    )
+  }
+}
 
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+const root = ReactDOM.createRoot(document.getElementById('root'));
+root.render(<AppRouter />);

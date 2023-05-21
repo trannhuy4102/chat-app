@@ -1,4 +1,4 @@
-import './App.css';
+import './css/App.css';
 import React from 'react';
 import Chatbox from './components/Chatbox';
 
@@ -30,7 +30,11 @@ class App extends React.Component {
           <input value={this.state.term} onChange={this.onChange} />
           <button>Send</button>
         </form>
+
       </div>
+
+
+
     )
   }
 
