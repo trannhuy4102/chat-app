@@ -1,5 +1,8 @@
 .App {
   text-align: center;
+  font-size: larger;
+  color: deeppink;
+  font-weight: bold;
 }
 
 .App-logo {

@@ -80,3 +80,7 @@ body {
   top: -12px;
   font-size: 12px;
 }
+
+input {
+  margin-top: 10px;
+}
