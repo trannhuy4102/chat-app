@@ -6,7 +6,7 @@ import reportWebVitals from './reportWebVitals';
 import Login from './components/Login';
 import Register from './components/Register';
 import { BrowserRouter as Router, Route, Link, Switch } from 'react-router-dom';
-import { auth, provider } from './firebase';
+import { auth } from './firebase';
 import firebase from './firebase';
 
 
